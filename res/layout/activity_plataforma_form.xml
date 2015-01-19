@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.garlini.gastosgames.view.PlataformaFormActivity" >
+
+    <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+<!-- 	<LinearLayout -->
+<!--     android:focusable="true" android:focusableInTouchMode="true" -->
+<!--     android:layout_width="0px" android:layout_height="0px"/> -->
+    
+    <EditText
+        android:id="@+id/editTextNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/nome_plataforma"
+        android:imeOptions="actionDone"
+        android:inputType="textCapWords"
+        android:singleLine="true" >
+
+    </EditText>
+
+    <Switch
+        android:id="@+id/switchAtiva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextNome"
+        android:layout_alignRight="@+id/editTextNome"
+        android:layout_below="@+id/editTextNome"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/option_ativa"
+        android:textOff="@string/option_nao"
+        android:textOn="@string/option_sim" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.garlini.gastosgames.FiltroActivity" >
+
+    <item
+        android:id="@+id/action_cancelar"
+        android:title="@string/action_cancelar"
+        app:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/action_filtrar"
+        android:title="@string/action_filtrar"
+        app:showAsAction="always"/>
+
+</menu>

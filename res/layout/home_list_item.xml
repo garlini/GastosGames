@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5dp" 
+    >
+    
+    <TextView
+            android:id="@+id/textPlataforma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_plataforma"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:textColor="#167AC6"
+            android:layout_gravity="left"
+            android:textSize="36sp" />
+    
+    <LinearLayout
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_marginTop="0dp"
+        >
+    
+        <TextView
+            android:id="@+id/textLabelGastoTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_gasto_total"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+        
+		<TextView android:id="@+id/textGastoTotal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:text="@string/placeholder_valor"
+			android:textColor="#CC181E"
+			android:textSize="22sp"
+		/>
+		
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_marginTop="0dp"
+        >
+    
+        <TextView
+            android:id="@+id/textLabelVendivelTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_vendivel_total"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+        
+		<TextView android:id="@+id/textVendivelTotal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:text="@string/placeholder_valor"
+			android:textColor="#46B525"
+			android:textSize="22sp"
+		/>
+		
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_marginTop="0dp"
+        >
+    
+        <TextView
+            android:id="@+id/textLabelUltimoMes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_ultimos_30_dias"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_gravity="center_vertical"
+            android:textSize="16sp" />
+        
+		<TextView android:id="@+id/textUltimoMes"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textStyle="bold"
+			android:gravity="right"
+			android:text="@string/placeholder_valor"
+			android:textColor="#2C9BB7"
+			android:textSize="22sp"
+		/>
+		
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.garlini.gastosgames.view.GastoFormActivity" >
+
+    <Spinner
+         android:id="@+id/spinnerPlataforma"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+         android:layout_alignParentTop="true"
+         android:spinnerMode="dialog"
+         android:prompt="@string/prompt_plataforma">
+    </Spinner>
+    
+    <EditText
+        android:id="@+id/editTextDescricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/spinnerPlataforma"
+        android:ems="10"
+        android:hint="@string/descricao_gasto"
+        android:imeOptions="actionNext"
+        android:inputType="textCapSentences"
+        android:singleLine="true" >
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/editTextDescricao"
+        android:layout_marginTop="15dp"
+        android:digits="0123456789,"
+        android:hint="@string/valor"
+        android:inputType="numberDecimal" >
+        
+    </EditText>
+   
+     
+    <Spinner
+         android:id="@+id/spinnerCategoria"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/editTextValor"
+         android:layout_marginTop="15dp"
+         android:spinnerMode="dialog"
+         android:prompt="@string/prompt_categoria" /> 
+    
+    
+    
+    <LinearLayout
+        android:id="@+id/layoutVendivel"
+        android:layout_height="wrap_content" 
+        android:layout_width="fill_parent"
+        android:layout_below="@id/spinnerCategoria"
+        >
+        
+        <Switch
+        android:id="@+id/switchVendivel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/option_vendivel"
+        android:textOff="@string/option_nao"
+        android:textOn="@string/option_sim" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHelp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="bottom"
+            android:contentDescription="@string/help"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_action_about" />
+        
+    </LinearLayout>
+   
+
+    <Button
+        android:id="@+id/buttonData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/layoutVendivel"
+        android:layout_alignRight="@id/layoutVendivel"
+        android:layout_below="@id/layoutVendivel"
+        android:layout_marginTop="15dp"
+        android:text="" />
+
+
+</RelativeLayout>
